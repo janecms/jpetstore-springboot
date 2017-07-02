@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Hello Thymeleaf!</title>
+</head>
+<body>
+<p th:text="'Hello, ' + ${name} + '!'" />
+
+<div class="panel-body">
+    <ul class="list-group">
+        <li class="list-group-item" th:each="category:${categoryList}">
+            <span th:text="${category.name}"></span>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
